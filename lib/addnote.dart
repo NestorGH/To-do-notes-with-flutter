@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_to_do_app/main.dart';
+import 'package:flutter_to_do_app/home.dart';
 
 class AddNote extends StatelessWidget {
   //const AddNote({Key? key}) : super(key: key);
@@ -37,7 +37,7 @@ class AddNote extends StatelessWidget {
             child: TextField(
               controller: title,
               decoration: const InputDecoration(
-                hintText: 'title',
+                hintText: 'Title',
               ),
             ),
           ),
@@ -52,7 +52,7 @@ class AddNote extends StatelessWidget {
                 expands: true,
                 maxLines: null,
                 decoration: const InputDecoration(
-                  hintText: 'content',
+                  hintText: 'Content',
                 ),
               ),
             ),

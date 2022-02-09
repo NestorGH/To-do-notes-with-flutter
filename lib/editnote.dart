@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_to_do_app/main.dart';
+import 'package:flutter_to_do_app/home.dart';
 
 class EditNote extends StatefulWidget {
   //EditNote({Key? key}) : super(key: key);
@@ -58,7 +58,7 @@ class _EditNoteState extends State<EditNote> {
             child: TextField(
               controller: title,
               decoration: const InputDecoration(
-                hintText: 'title',
+                hintText: 'Title',
               ),
             ),
           ),
@@ -73,7 +73,7 @@ class _EditNoteState extends State<EditNote> {
                 expands: true,
                 maxLines: null,
                 decoration: const InputDecoration(
-                  hintText: 'content',
+                  hintText: 'Content',
                 ),
               ),
             ),
